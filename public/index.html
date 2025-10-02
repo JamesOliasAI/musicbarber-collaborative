@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicBarber - Collaborative Music Editor</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>MusicBarber</h1>
+            <p>Collaborative Music Editor</p>
+        </header>
+
+        <main class="main-content">
+            <div class="toolbar">
+                <button id="play-btn">Play</button>
+                <button id="stop-btn">Stop</button>
+                <button id="record-btn">Record</button>
+                <button id="new-track-btn">New Track</button>
+            </div>
+
+            <div class="tracks-container">
+                <div class="track" id="track-1">
+                    <div class="track-header">
+                        <span class="track-name">Track 1</span>
+                        <div class="track-controls">
+                            <button class="mute-btn">Mute</button>
+                            <button class="solo-btn">Solo</button>
+                            <input type="range" class="volume-slider" min="0" max="100" value="80">
+                        </div>
+                    </div>
+                    <div class="track-waveform">
+                        <canvas class="waveform-canvas" width="800" height="60"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="effects-panel">
+                <h3>Effects</h3>
+                <div class="effect">
+                    <label>Reverb</label>
+                    <input type="range" class="effect-slider" min="0" max="100" value="20">
+                </div>
+                <div class="effect">
+                    <label>Delay</label>
+                    <input type="range" class="effect-slider" min="0" max="100" value="10">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../src/index.js"></script>
+</body>
+</html>

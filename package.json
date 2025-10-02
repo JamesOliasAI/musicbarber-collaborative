@@ -1,0 +1,29 @@
+{
+  "name": "musicbarber",
+  "version": "1.0.0",
+  "description": "A collaborative music editing application",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "start": "node src/index.js",
+    "test": "jest",
+    "build": "webpack --mode=production"
+  },
+  "keywords": [
+    "music",
+    "audio",
+    "collaboration",
+    "editor"
+  ],
+  "author": "MusicBarber Team",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "live-server": "^1.2.2",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "tone": "^14.7.77"
+  }
+}
